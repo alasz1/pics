@@ -327,8 +327,8 @@ var PicService = /** @class */ (function () {
     return PicService;
 }());
 
-// const apiUrl = "http://localhost:3000/";
-var apiUrl = 'https://picspicspics.herokuapp.com/';
+// const apiUrl = "http://localhost:3000/api";
+var apiUrl = 'https://picspicspics.herokuapp.com/api';
 
 
 /***/ }),
