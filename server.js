@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 app.get('/api', (req, res) => {
   // directory will be selected by request query parameter "dir"
   console.log("req.query: ", req.query.dir)
-  const dirPath = path.join(__dirname, 'assets', req.query.dir);
+  const dirPath = path.join(__dirname, 'public', 'assets', req.query.dir);
   // const dirPath = path.join(req.query.dir);
   fs.readdir(dirPath, function (err, files) {
     if (err) {
