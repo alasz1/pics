@@ -20,7 +20,7 @@ app.get('/api', (req, res) => {
   console.log("req.query: ", req.query.dir)
   const dirPath = path.join(__dirname, 'public', 'assets', req.query.dir);
   // const dirPath = path.join(req.query.dir);
-  fs.readdir(dirPath, function (err, files) {
+  fs.readdir(dirPath, function (err, files) { 
     if (err) {
       return console.log('Unable to scan directory: ' + err);
     }
